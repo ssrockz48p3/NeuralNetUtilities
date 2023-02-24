@@ -24,6 +24,9 @@ def softmax(dot_list):
 
 def sigmoid(dot):
     out = np.zeros(shape=np.shape(dot))
+    for i in range(len(dot)):
+        out[i] = 1/(1+exp(-(dot[i])))
+    return out
 
 
 class Errors:
