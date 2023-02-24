@@ -2,10 +2,6 @@ import numpy as np
 from math import exp
 
 
-inp = np.array([[1.65, 1.65, 1.65],
-                [1.875, 1.875, 1.875]])
-
-
 def relu(dot):
     out = np.zeros(shape=np.shape(dot))
     for i in range(len(dot)):
